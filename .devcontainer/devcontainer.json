@@ -20,6 +20,8 @@
 		"streetsidesoftware.code-spell-checker",
 		"eamodio.gitlens",
 		"esbenp.prettier-vscode",
+		"christian-kohler.path-intellisense",
+		"bradlc.vscode-tailwindcss",
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
