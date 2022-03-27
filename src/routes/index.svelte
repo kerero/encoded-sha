@@ -1,23 +1,25 @@
 <script>
-  import Title from "./title.svelte";
+  import Title from '../lib/title.svelte'
+  import Input from '../lib/input.svelte'
+  import Output from '../lib/output.svelte'
+
+  let input = ''
 </script>
 
 <div
-  class=" flex justify-center h-screen bg-center-top
+  class="w-screen h-screen bg-center-top
    bg-[url('/static/bg.jpg')] 
-   dark:bg-[url('/static/bg-dark-1.jpg')] dark:bg-slate-900 "
+   dark:bg-[url('/static/bg-dark-1.jpg')] dark:bg-slate-900"
 >
-  <div
-    class="flex justify-center h-screen w-screen backdrop-blur-lg"
-  >
-    <div class="h-max justify-self-center pb-8 text-white text-center rounded-lg m-10  shadow-2xl w-11/12 lg:w-2/4  
-    bg-slate-900/60 border-2 border-slate-800/40">
+  <div class="flex justify-center h-screen w-screen backdrop-blur">
+    <div
+      class="h-max justify-self-center pb-8 text-white text-center rounded-lg m-7 shadow-lg w-screen lg:w-1/2  
+    bg-cyan-50/40
+    dark:bg-slate-800/60 border-2 dark:border-slate-800/40"
+    >
       <Title />
-      <input
-        type="text"
-        placeholder="Text..."
-        class="rounded-md shadow- placeholder:text-center placeholder:italic mt-4 p-1 lg:w-2/5 w-4/5 text-black"
-      />
+      <Input bind:value='{input}'/>
+      <Output input="{input}"/>
     </div>
   </div>
 </div>
