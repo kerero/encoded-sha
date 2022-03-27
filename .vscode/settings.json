@@ -3,5 +3,26 @@
     "svelte.ask-to-enable-ts-plugin": false,
     "svelte.plugin.svelte.defaultScriptLanguage": "ts",
     "svelte.plugin.svelte.format.config.singleQuote": true,
-    "svelte.plugin.svelte.useNewTransformation": true
+    "svelte.plugin.svelte.useNewTransformation": true,
+    "remote.localPortHost": "allInterfaces",
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown",
+        "svelte"
+    ],
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown",
+        "svelte"
+    ],
 }
