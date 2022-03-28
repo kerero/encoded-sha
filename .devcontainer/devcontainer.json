@@ -19,7 +19,6 @@
 		"svelte.svelte-vscode",
 		"streetsidesoftware.code-spell-checker",
 		"eamodio.gitlens",
-		"esbenp.prettier-vscode",
 		"christian-kohler.path-intellisense",
 		"bradlc.vscode-tailwindcss",
 	],
