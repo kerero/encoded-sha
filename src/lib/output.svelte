@@ -8,7 +8,8 @@
     flex
     max-w-[75%]"
   >
-    <span class="bg-slate-800 rounded-l-lg text-slate-400 p-1 pl-2 pr-2 max-w-[100%] text-left break-words"
+    <span
+      class="bg-slate-800 rounded-l-lg text-slate-400 p-1 pl-2 pr-2 max-w-[100%] text-left break-words"
       >{input}</span
     >
   </div>
