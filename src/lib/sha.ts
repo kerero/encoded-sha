@@ -6,7 +6,6 @@ export enum SHA_ALGO {
 }
 
 export async function sha(s: string, algo: SHA_ALGO) {
-    if(window === undefined) return ''
-    const h = await window.crypto.subtle.digest(algo, new TextEncoder().encode(s))
-    return window.btoa(String.fromCharCode(...new Uint8Array(h)))
+  const h = await crypto.subtle.digest(algo, new TextEncoder().encode(s))
+  return window.btoa(String.fromCharCode(...new Uint8Array(h)))
 }

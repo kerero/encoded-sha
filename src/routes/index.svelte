@@ -1,10 +1,17 @@
 <script>
   import Title from '$lib/title.svelte'
-  import Input from '$lib/input.svelte'
+  import Input, { input_text } from '$lib/input.svelte'
   import Output from '$lib/output.svelte'
   import { SHA_ALGO, sha } from '$lib/sha'
+  import { onMount, onDestroy } from 'svelte'
+  
+  let hash = ''
+  let unsub
 
-  let input = ''
+  onMount(() => {
+    unsub = input_text.subscribe(s => sha(s, SHA_ALGO.SHA512).then(h => hash = h))
+  })
+  onDestroy(() => unsub && unsub())
 </script>
 
 <div
@@ -19,12 +26,10 @@
     dark:bg-slate-800/60 border-2 dark:border-slate-800/40"
     >
       <Title />
-      <Input bind:value={input} />
+      <Input />
 
-      {#if input}
-        {#await sha(input, SHA_ALGO.SHA256) then hash}
-          <Output input={hash} />
-        {/await}
+      {#if $input_text}
+        <div class="mt-6"><Output input={hash} /></div>
       {/if}
     </div>
   </div>
