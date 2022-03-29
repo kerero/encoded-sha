@@ -11,8 +11,13 @@ const config = {
     adapter: adapter(),
     prerender: {
       default: true,
-    }
-  }
+    },
+    paths: {
+      base: '/encoded-sha',
+      // assets: 'https://orikerer.github.io/encoded-sha'
+    },
+  },
+
 }
 
 export default config
