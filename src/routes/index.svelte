@@ -13,11 +13,9 @@
   })
   onDestroy(() => unsub && unsub())
 </script>
-
-<div
-  class="w-screen h-screen bg-center-top
-   bg-[url('/img/bg.jpg')] 
-   dark:bg-[url('/img/bg-dark-1.jpg')] dark:bg-slate-900"
+<div class="w-screen h-screen bg-center-top
+   bg-[url('/static/img/bg.webp')] 
+   dark:bg-[url('/static/img/bg-dark.webp')] dark:bg-slate-900"
 >
   <div class="flex justify-center h-screen w-screen backdrop-blur">
     <div
