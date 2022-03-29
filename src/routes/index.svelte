@@ -16,8 +16,8 @@
 
 <div
   class="w-screen h-screen bg-center-top
-   bg-[url('/static/bg.jpg')] 
-   dark:bg-[url('/static/bg-dark-1.jpg')] dark:bg-slate-900"
+   bg-[url('/img/bg.jpg')] 
+   dark:bg-[url('/img/bg-dark-1.jpg')] dark:bg-slate-900"
 >
   <div class="flex justify-center h-screen w-screen backdrop-blur">
     <div
