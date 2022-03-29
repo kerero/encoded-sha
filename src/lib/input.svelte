@@ -4,7 +4,7 @@
 </script>
 
 <script lang="ts">
-  import reactive_limit from './reactive_limit'
+  import reactive_limit from './reactive-limit'
   const limit = reactive_limit(500)
   let value = ''
   $: limit(() => input_text.set(value))
