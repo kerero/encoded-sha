@@ -1,4 +1,4 @@
-name: Deploy Github Pages
+name: gh-pages deploy 🚀
 on:
   push:
     branches: [ main ]
