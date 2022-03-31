@@ -4,6 +4,7 @@
   import Output from '$lib/output.svelte'
   import { SHA_ALGO, sha } from '$lib/sha'
   import { onMount, onDestroy } from 'svelte'
+  import GhCorner from '$lib/gh-corner.svelte'
   
   let hash = ''
   let unsub
@@ -19,6 +20,7 @@
    dark:bg-[url('/static/img/bg-dark.webp')] dark:bg-slate-900"
 >
   <div class="flex justify-center h-screen w-screen backdrop-blur">
+    <GhCorner repo_name="OriKerer/encoded-sha" />
     <div
       class="h-max justify-self-center pb-8 text-white text-center rounded-lg m-7 shadow-lg max-w-[90%] w-10/12 lg:w-1/2  
     bg-cyan-50/40
