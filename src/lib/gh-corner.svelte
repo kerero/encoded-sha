@@ -12,7 +12,7 @@
 		viewBox="0 0 250 250"
 		style="position: absolute; top: 0; border: 0; right: 0;"
 		aria-hidden="true"
-        class="fill-cyan-800/50  text-white
+        class="fill-cyan-500/20  text-white 
         dark:fill-slate-500 dark:text-slate-900
         w-11 lg:w-16"
 	>
