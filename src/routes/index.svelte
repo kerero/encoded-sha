@@ -5,34 +5,41 @@
   import { SHA_ALGO, sha } from '$lib/sha'
   import { onMount, onDestroy } from 'svelte'
   import GhCorner from '$lib/gh-corner.svelte'
-  
+
   let hash = ''
   let unsub
   let sha_algo = SHA_ALGO.SHA256
 
   onMount(() => {
-    unsub = input_text.subscribe(s => sha(s, sha_algo).then(h => hash = h))
+    unsub = input_text.subscribe((s) =>
+      sha(s, sha_algo).then((h) => (hash = h))
+    )
   })
   onDestroy(() => unsub && unsub())
 </script>
 
-<div class="w-screen h-screen bg-center-top
-   bg-[url('/static/img/bg.webp')] 
-   dark:bg-[url('/static/img/bg-dark.webp')] dark:bg-slate-900"
->
-  <div class="flex justify-center h-screen w-screen backdrop-blur dark:bg-slate-900/50 bg-indigo-50/40">
-    <GhCorner repo_name="OriKerer/encoded-sha" />
+<div class="flex justify-center bg-indigo-50/30 dark:bg-slate-900">
+  <div
+    class="flex justify-center w-screen xl:w-3/5 border-x-2 border-indigo-200 dark:border-slate-800 backdrop-blur h-screen bg-center-top
+  bg-[url('/static/img/bg.webp')] 
+  dark:bg-[url('/static/img/bg-dark.webp')] dark:bg-slate-900"
+  >
     <div
-      class="h-max justify-self-center pb-8 text-white text-center rounded-lg mx-7 my-16 lg:my-36 shadow-md max-w-[90%] w-10/12 lg:w-1/2  
+      class="flex justify-center h-screen w-screen  dark:bg-slate-900/50 bg-indigo-50/40"
+    >
+      <GhCorner repo_name="OriKerer/encoded-sha" />
+      <div
+        class="h-max justify-self-center pb-8 text-white text-center rounded-lg mx-7 my-16 lg:my-36 shadow-md max-w-[90%] w-10/12 lg:w-1/2  
     bg-cyan-100/10
     dark:bg-slate-800/60 border-2 border-indigo-100/70 dark:border-slate-800/40"
-    >
-      <Title />
-      <Input />
+      >
+        <Title />
+        <Input />
 
-      {#if $input_text}
-        <div class="mt-6"><Output input={hash} /></div>
-      {/if}
+        {#if $input_text}
+          <div class="mt-6"><Output input={hash} /></div>
+        {/if}
+      </div>
     </div>
   </div>
 </div>
