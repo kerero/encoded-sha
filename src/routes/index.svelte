@@ -7,9 +7,10 @@
   
   let hash = ''
   let unsub
+  let sha_algo = SHA_ALGO.SHA256
 
   onMount(() => {
-    unsub = input_text.subscribe(s => sha(s, SHA_ALGO.SHA512).then(h => hash = h))
+    unsub = input_text.subscribe(s => sha(s, sha_algo).then(h => hash = h))
   })
   onDestroy(() => unsub && unsub())
 </script>
