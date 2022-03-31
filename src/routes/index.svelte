@@ -18,20 +18,29 @@
   onDestroy(() => unsub && unsub())
 </script>
 
+<!-- Solid background -->
 <div class="flex justify-center bg-indigo-50/30 dark:bg-slate-900">
+  <!-- Image background -->
   <div
-    class="flex justify-center w-screen xl:w-3/5 border-x-2 border-indigo-200 dark:border-slate-800 backdrop-blur h-screen bg-center-top
-  bg-[url('/static/img/bg.webp')] 
-  dark:bg-[url('/static/img/bg-dark.webp')] dark:bg-slate-900"
+    class="
+      flex justify-center w-screen h-screen bg-center-top backdrop-blur xl:border-x-2
+      xl:w-3/5  2xl:w-1/2
+      bg-[url('/static/img/bg.webp')] border-indigo-200 
+      dark:bg-[url('/static/img/bg-dark.webp')] dark:bg-slate-900 dark:border-slate-800
+    "
   >
+    <!-- image cover -->
     <div
       class="flex justify-center h-screen w-screen  dark:bg-slate-900/50 bg-indigo-50/40"
     >
-      <GhCorner repo_name="OriKerer/encoded-sha" />
+      <!-- main container -->
       <div
-        class="h-max justify-self-center pb-8 text-white text-center rounded-lg mx-7 my-16 lg:my-36 shadow-md max-w-[90%] w-10/12 lg:w-1/2  
-    bg-cyan-100/10
-    dark:bg-slate-800/60 border-2 border-indigo-100/70 dark:border-slate-800/40"
+        class="
+          h-max justify-self-center pb-8 mx-7 my-16 lg:my-36 shadow-md
+        text-white text-center rounded-lg  
+          max-w-[90%] w-10/12 md:w-2/3  
+        bg-cyan-100/10 border-indigo-100/70
+        dark:bg-slate-800/60 border-2  dark:border-slate-800/40"
       >
         <Title />
         <Input />
@@ -40,6 +49,9 @@
           <div class="mt-6"><Output input={hash} /></div>
         {/if}
       </div>
+    </div>
+    <div class="w-0 h-0 relative">
+      <GhCorner repo_name="OriKerer/encoded-sha" />
     </div>
   </div>
 </div>

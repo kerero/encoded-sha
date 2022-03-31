@@ -10,11 +10,12 @@
 	<svg
 
 		viewBox="0 0 250 250"
-		style="position: absolute; top: 0; border: 0; right: 0;"
+		style=" top: 0; border: 0; right: 0;"
 		aria-hidden="true"
-        class="fill-cyan-500/20  text-white 
+        class="fill-indigo-200/75  text-white 
         dark:fill-slate-500 dark:text-slate-900
-        w-11 lg:w-16"
+        w-11 lg:w-16
+		absolute"
 	>
 		<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" />
 		<path
