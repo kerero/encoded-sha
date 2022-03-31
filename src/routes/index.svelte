@@ -23,7 +23,7 @@
   <div class="flex justify-center h-screen w-screen backdrop-blur dark:bg-slate-900/50 bg-indigo-50/40">
     <GhCorner repo_name="OriKerer/encoded-sha" />
     <div
-      class="h-max justify-self-center pb-8 text-white text-center rounded-lg m-7 shadow-md max-w-[90%] w-10/12 lg:w-1/2  
+      class="h-max justify-self-center pb-8 text-white text-center rounded-lg mx-7 my-16 lg:my-36 shadow-md max-w-[90%] w-10/12 lg:w-1/2  
     bg-cyan-100/10
     dark:bg-slate-800/60 border-2 border-indigo-100/70 dark:border-slate-800/40"
     >
