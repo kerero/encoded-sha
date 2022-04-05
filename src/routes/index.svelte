@@ -2,20 +2,11 @@
   import Title from '$lib/title.svelte'
   import Input, { input_text } from '$lib/input.svelte'
   import Output from '$lib/output.svelte'
-  import { SHA_ALGO, sha } from '$lib/sha'
-  import { onMount, onDestroy } from 'svelte'
+  import { compute_hash, selected_sha } from '$lib/sha'
   import GhCorner from '$lib/gh-corner.svelte'
 
   let hash = ''
-  let unsub
-  let sha_algo = SHA_ALGO.SHA256
-
-  onMount(() => {
-    unsub = input_text.subscribe((s) =>
-      sha(s, sha_algo).then((h) => (hash = h))
-    )
-  })
-  onDestroy(() => unsub && unsub())
+  $: compute_hash($input_text, $selected_sha).then((h) => (hash = h))
 </script>
 
 <!-- Solid background -->
@@ -31,7 +22,7 @@
   >
     <!-- image cover -->
     <div
-      class="flex justify-center h-screen w-screen  dark:bg-slate-900/50 bg-indigo-50/40"
+      class="flex justify-center w-screen h-screen dark:bg-slate-900/50 bg-indigo-50/40"
     >
       <!-- main container -->
       <div
@@ -50,7 +41,7 @@
         {/if}
       </div>
     </div>
-    <div class="w-0 h-0 relative">
+    <div class="relative w-0 h-0">
       <GhCorner repo_name="OriKerer/encoded-sha" />
     </div>
   </div>
