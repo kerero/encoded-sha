@@ -1,7 +1,7 @@
 module.exports = {
 	root: true,
 	parser: '@typescript-eslint/parser',
-	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', '@sveltejs'],
 	plugins: ['svelte3', '@typescript-eslint'],
 	ignorePatterns: ['*.cjs'],
 	overrides: [{ files: ['*.svelte'], processor: 'svelte3/svelte3' }],
@@ -22,6 +22,16 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'],
 		quotes: ['error', 'single'],
 		semi: ['error', 'never'],
-		'max-len': ["error", { "code": 100 }]
+		'max-len': ["error", { "code": 100 }],
+		// "import/no-unresolved": "off",
+		// "import/extensions": "off",
+		// "import/no-extraneous-dependencies": "off"
+		'comma-dangle': ["error", {
+			"arrays": "always-multiline",
+			"objects": "always-multiline",
+			"imports": "always-multiline",
+			"exports": "always-multiline",
+			"functions": "never"
+		}]
 	}
 };

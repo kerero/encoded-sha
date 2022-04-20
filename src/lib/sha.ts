@@ -1,5 +1,5 @@
-import { browser } from '$app/env'
 import { writable } from 'svelte/store'
+import { browser } from '$app/env'
 
 export enum SHA {
   SHA256 = 'SHA-256',
@@ -12,13 +12,11 @@ export async function compute_hash(s: string, algo: SHA): Promise<string> {
     const h = await crypto.subtle.digest(algo, new TextEncoder().encode(s))
     return window.btoa(String.fromCharCode(...new Uint8Array(h)))
   } else {
-    return new Promise(res => res(''))
+    return new Promise((res) => res(''))
   }
 }
 
-export const selected_sha = writable((browser && localStorage.selected_sha) 
-  || SHA.SHA256)
+export const selected_sha = writable((browser && localStorage.selected_sha) || SHA.SHA256)
 if (browser) {
-  selected_sha.subscribe(v => localStorage.selected_sha = v)
+  selected_sha.subscribe((v) => (localStorage.selected_sha = v))
 }
-

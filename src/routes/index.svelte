@@ -14,24 +14,22 @@
   <!-- Image background -->
   <div
     class="
-      flex justify-center w-screen h-screen bg-center-top backdrop-blur xl:border-x-2
-      xl:w-3/5  2xl:w-1/2
-      bg-[url('/static/img/bg.webp')] border-indigo-200 
-      dark:bg-[url('/static/img/bg-dark.webp')] dark:bg-slate-900 dark:border-slate-800
+      flex h-screen w-screen justify-center border-indigo-200 bg-[url('/static/img/bg.webp')] bg-center-top
+      backdrop-blur  dark:border-slate-800
+      dark:bg-slate-900 dark:bg-[url('/static/img/bg-dark.webp')] 
+      xl:w-3/5 xl:border-x-2 2xl:w-1/2
     "
   >
     <!-- image cover -->
-    <div
-      class="flex justify-center w-screen h-screen dark:bg-slate-900/50 bg-indigo-50/40"
-    >
+    <div class="flex h-screen w-screen justify-center bg-indigo-50/40 dark:bg-slate-900/50">
       <!-- main container -->
       <div
         class="
-          h-max justify-self-center pb-8 mx-7 my-16 lg:my-36 shadow-md
-        text-white text-center rounded-lg  
-          max-w-[90%] w-10/12 md:w-2/3  
-        bg-cyan-100/10 border-indigo-100/70
-        dark:bg-slate-800/60 border-2  dark:border-slate-800/40"
+          mx-7 my-16 h-max w-10/12 max-w-[90%] justify-self-center rounded-lg
+        border-2 border-indigo-100/70 bg-cyan-100/10  
+          pb-8 text-center text-white  
+        shadow-md dark:border-slate-800/40
+        dark:bg-slate-800/60 md:w-2/3  lg:my-36"
       >
         <Title />
         <Input />
@@ -41,7 +39,7 @@
         {/if}
       </div>
     </div>
-    <div class="relative w-0 h-0">
+    <div class="relative h-0 w-0">
       <GhCorner repo_name="OriKerer/encoded-sha" />
     </div>
   </div>

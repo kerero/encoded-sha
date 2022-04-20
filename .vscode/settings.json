@@ -25,4 +25,8 @@
         "markdown",
         "svelte"
     ],
+    "cSpell.words": [
+        "Precache",
+        "precaching"
+    ],
 }

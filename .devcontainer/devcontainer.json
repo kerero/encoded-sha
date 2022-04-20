@@ -22,6 +22,7 @@
 		"christian-kohler.path-intellisense",
 		"bradlc.vscode-tailwindcss",
 		"mhutchie.git-graph",
+		"esbenp.prettier-vscode",
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

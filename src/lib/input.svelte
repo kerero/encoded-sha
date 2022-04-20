@@ -10,16 +10,16 @@
   $: limit(() => input_text.set(value))
 </script>
 
-<div class="flex mt-5 justify-center">
+<div class="mt-5 flex justify-center">
   <input
     bind:value
-    type="text"
+    type="password"
     placeholder="Start Typing..."
     maxlength="256"
     class="
-      rounded-full shadow p-1 pl-3 pr-3 ring-0 outline-none 
-      text-slate-900 placeholder:italic
-      md:w-3/5 w-4/5
+      w-4/5 rounded-full p-1 pl-3 pr-3 text-slate-900 shadow 
+      outline-none ring-0
+      placeholder:italic md:w-3/5
     "
   />
 </div>
