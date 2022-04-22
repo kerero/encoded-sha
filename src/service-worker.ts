@@ -1,7 +1,7 @@
 import { precacheAndRoute } from 'workbox-precaching'
 import type { PrecacheEntry } from 'workbox-precaching'
 import { registerRoute } from 'workbox-routing'
-import { StaleWhileRevalidate, NetworkFirst } from 'workbox-strategies'
+import { StaleWhileRevalidate } from 'workbox-strategies'
 import { build, files, version } from '$service-worker'
 
 precacheAndRoute([
