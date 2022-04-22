@@ -1,15 +1,28 @@
 {
     "name": "Encoded SHA",
     "short_name": "eSHA",
+    "start_url": ".",
     "icons": [
         {
             "src": "/encoded-sha/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
-            "purpose": "maskable"
+            "purpose": "any"
         },
         {
             "src": "/encoded-sha/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },        
+        {
+            "src": "/encoded-sha/android-chrome-192x192-square.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/encoded-sha/android-chrome-512x512-square.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
