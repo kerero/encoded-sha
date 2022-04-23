@@ -1,13 +1,21 @@
 <!-- svelte-ignore a11y-autofocus -->
 <script lang="ts">
   import { writable } from 'svelte/store'
+  import { onMount } from 'svelte'
+  let ref
 
   export const value = writable('')
+
+  onMount(() => {
+    if (!navigator?.userAgentData?.mobile) {
+      ref.focus()
+    }
+  })
 </script>
 
 <div class="mt-5 flex justify-center">
   <input
-    autofocus
+    bind:this={ref}
     bind:value={$value}
     type="password"
     placeholder="Start Typing..."
