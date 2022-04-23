@@ -13,7 +13,6 @@
 
 <div class="mt-5 flex justify-center">
   <input
-    autofocus
     bind:value
     type="password"
     placeholder="Start Typing..."

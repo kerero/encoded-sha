@@ -24,12 +24,12 @@
     <div class="flex h-screen w-screen justify-center bg-indigo-50/40 dark:bg-slate-900/50">
       <!-- main container -->
       <div
-        class="
-          mx-7 my-16__ h-max w-10/12 max-w-[90%] justify-self-center rounded-lg
-        border-2 border-indigo-100/70 bg-cyan-100/10  
-          pb-8 text-center text-white  
-        shadow-md dark:border-slate-800/40
-        dark:bg-slate-800/60 md:w-2/3  lg:my-36 my-auto"
+        class=" my-16__ mx-7
+          my-[20rem] h-max w-10/12 max-w-[90%] justify-self-center rounded-lg border-2
+        border-indigo-100/70 bg-cyan-100/10 pb-8  
+          text-center text-white shadow-md  
+        transition-all duration-300
+        focus-within:my-32 dark:border-slate-800/40  dark:bg-slate-800/60 sm:my-36 sm:focus-within:my-36 md:w-2/3"
       >
         <Title />
         <Input />
