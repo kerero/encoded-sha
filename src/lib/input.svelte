@@ -2,12 +2,12 @@
 <script lang="ts">
   import { writable } from 'svelte/store'
   import { onMount } from 'svelte'
-  let ref
-
+  
   export const value = writable('')
-
+  
+  let ref: HTMLInputElement
   onMount(() => {
-    if (!navigator?.userAgentData?.mobile) {
+    if (!(navigator as any)?.userAgentData?.mobile) {
       ref.focus()
     }
   })
