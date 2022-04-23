@@ -25,11 +25,11 @@
       <!-- main container -->
       <div
         class="
-          mx-7 my-16 h-max w-10/12 max-w-[90%] justify-self-center rounded-lg
+          mx-7 my-16__ h-max w-10/12 max-w-[90%] justify-self-center rounded-lg
         border-2 border-indigo-100/70 bg-cyan-100/10  
           pb-8 text-center text-white  
         shadow-md dark:border-slate-800/40
-        dark:bg-slate-800/60 md:w-2/3  lg:my-36"
+        dark:bg-slate-800/60 md:w-2/3  lg:my-36 my-auto"
       >
         <Title />
         <Input />
