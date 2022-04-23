@@ -1020,11 +1020,11 @@ class StaleWhileRevalidate extends Strategy {
   }
 }
 const build = [
-  "/encoded-sha/_app/start-d69499f4.js",
+  "/encoded-sha/_app/start-223d6ccc.js",
   "/encoded-sha/_app/pages/__layout.svelte-a9500c79.js",
   "/encoded-sha/_app/assets/pages/__layout.svelte-619480fe.css",
   "/encoded-sha/_app/error.svelte-837cd953.js",
-  "/encoded-sha/_app/pages/index.svelte-c31c6d21.js",
+  "/encoded-sha/_app/pages/index.svelte-23915d97.js",
   "/encoded-sha/_app/assets/pages/index.svelte-0f048e4d.css",
   "/encoded-sha/_app/chunks/index-88edda46.js",
   "/encoded-sha/_app/chunks/index-41b5b6b6.js"
@@ -1043,7 +1043,7 @@ const files = [
   "/encoded-sha/img/bg.webp",
   "/encoded-sha/site.webmanifest"
 ];
-const version = "1650692165457";
+const version = "1650692920852";
 precacheAndRoute([
   ...build.map((f) => ({ url: f, revision: null })),
   ...files.filter((f) => !f.includes(".nojekyll")).map((f) => ({ url: f, revision: `${version}` }))
