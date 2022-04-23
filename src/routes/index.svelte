@@ -1,12 +1,18 @@
 <script>
   import Title from '$lib/title.svelte'
-  import Input, { input_text } from '$lib/input.svelte'
+  import Input from '$lib/input.svelte'
   import Output from '$lib/output.svelte'
-  import { compute_hash, selected_sha } from '$lib/sha'
   import GhCorner from '$lib/gh-corner.svelte'
+  import { compute_hash, selected_sha } from '$lib/sha'
+  import reactive_limit from '$lib/reactive-limit'
+  import { onMount } from 'svelte'
 
   let hash = ''
-  $: compute_hash($input_text, $selected_sha).then((h) => (hash = h))
+  let text_input
+
+  const limit = reactive_limit(500)
+  $: limit(() => compute_hash($text_input, $selected_sha).then((h) => (hash = h)))
+  onMount(() => addEventListener('visibilitychange', () => text_input.set('')))
 </script>
 
 <!-- Solid background -->
@@ -32,9 +38,9 @@
         focus-within:my-32 dark:border-slate-800/40  dark:bg-slate-800/60 sm:my-36 sm:focus-within:my-36 md:w-2/3"
       >
         <Title />
-        <Input />
+        <Input bind:value={text_input} />
 
-        {#if $input_text}
+        {#if hash}
           <div class="mt-6"><Output input={hash} /></div>
         {/if}
       </div>

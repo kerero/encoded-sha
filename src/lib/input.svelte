@@ -1,19 +1,14 @@
 <!-- svelte-ignore a11y-autofocus -->
-<script lang="ts" context="module">
-  import { writable } from 'svelte/store'
-  export const input_text = writable('')
-</script>
-
 <script lang="ts">
-  import reactive_limit from './reactive-limit'
-  const limit = reactive_limit(500)
-  let value = ''
-  $: limit(() => input_text.set(value))
+  import { writable } from 'svelte/store'
+
+  export const value = writable('')
 </script>
 
 <div class="mt-5 flex justify-center">
   <input
-    bind:value
+    autofocus
+    bind:value={$value}
     type="password"
     placeholder="Start Typing..."
     maxlength="256"

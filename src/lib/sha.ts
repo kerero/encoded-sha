@@ -8,7 +8,7 @@ export enum SHA {
 }
 
 export async function compute_hash(s: string, algo: SHA): Promise<string> {
-  if (browser) {
+  if (browser && s) {
     const h = await crypto.subtle.digest(algo, new TextEncoder().encode(s))
     return window.btoa(String.fromCharCode(...new Uint8Array(h)))
   } else {
