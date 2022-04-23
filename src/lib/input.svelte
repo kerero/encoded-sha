@@ -1,3 +1,4 @@
+<!-- svelte-ignore a11y-autofocus -->
 <script lang="ts" context="module">
   import { writable } from 'svelte/store'
   export const input_text = writable('')
@@ -12,6 +13,7 @@
 
 <div class="mt-5 flex justify-center">
   <input
+    autofocus
     bind:value
     type="password"
     placeholder="Start Typing..."
