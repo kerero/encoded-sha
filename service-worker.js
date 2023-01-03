@@ -1020,7 +1020,7 @@ class StaleWhileRevalidate extends Strategy {
   }
 }
 const build = [
-  "/encoded-sha/_app/start-57647d0f.js",
+  "/encoded-sha/_app/start-ccf6d08e.js",
   "/encoded-sha/_app/pages/__layout.svelte-e4709914.js",
   "/encoded-sha/_app/assets/pages/__layout.svelte-2d5e570a.css",
   "/encoded-sha/_app/error.svelte-48c3fbd2.js",
@@ -1043,7 +1043,7 @@ const files = [
   "/encoded-sha/img/bg.webp",
   "/encoded-sha/site.webmanifest"
 ];
-const version = "1662105747608";
+const version = "1672759424443";
 precacheAndRoute([
   ...build.map((f) => ({ url: f, revision: null })),
   ...files.filter((f) => !f.includes(".nojekyll")).map((f) => ({ url: f, revision: `${version}` }))
