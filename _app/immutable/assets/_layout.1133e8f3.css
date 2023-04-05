@@ -695,7 +695,7 @@ video {
   background-color: rgb(240 249 255 / 0.75);
 }
 .bg-\[url\(\'\/static\/img\/bg\.webp\'\)\] {
-  background-image: url('/encoded-sha/_app/immutable/assets/bg.f3a51550.webp');
+  background-image: url('/_app/immutable/assets/bg.f3a51550.webp');
 }
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
@@ -950,7 +950,7 @@ video {
   }
 
   .dark\:bg-\[url\(\'\/static\/img\/bg-dark\.webp\'\)\] {
-    background-image: url('/encoded-sha/_app/immutable/assets/bg-dark.2e214e11.webp');
+    background-image: url('/_app/immutable/assets/bg-dark.2e214e11.webp');
   }
 
   .dark\:bg-gradient-to-tl {
