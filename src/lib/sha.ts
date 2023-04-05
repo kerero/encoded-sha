@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store'
-import { browser } from '$app/env'
+import { browser } from '$app/environment'
 
 export enum SHA {
   SHA256 = 'SHA-256',
