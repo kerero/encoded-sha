@@ -1604,18 +1604,18 @@ class Ee extends V {
   }
 }
 const u = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), _e = [
-  u + "/_app/immutable/entry/app.a78b9ec3.js",
-  u + "/_app/immutable/assets/0.ca5252a0.css",
-  u + "/_app/immutable/nodes/0.44e1dc8d.js",
+  u + "/_app/immutable/entry/app.1af7dd96.js",
+  u + "/_app/immutable/assets/0.22498e78.css",
+  u + "/_app/immutable/nodes/0.caf80aaa.js",
   u + "/_app/immutable/assets/bg.f3a51550.webp",
   u + "/_app/immutable/assets/bg-dark.2e214e11.webp",
-  u + "/_app/immutable/nodes/1.0e301251.js",
+  u + "/_app/immutable/nodes/1.e7724d02.js",
   u + "/_app/immutable/assets/2.2afdc83d.css",
   u + "/_app/immutable/nodes/2.820451c1.js",
   u + "/_app/immutable/chunks/index.07554069.js",
   u + "/_app/immutable/chunks/index.82de2a7a.js",
-  u + "/_app/immutable/chunks/singletons.33c5bd68.js",
-  u + "/_app/immutable/entry/start.f17ef6b8.js"
+  u + "/_app/immutable/chunks/singletons.4063f787.js",
+  u + "/_app/immutable/entry/start.950931e3.js"
 ], ve = [
   u + "/.nojekyll",
   u + "/android-chrome-192x192-square.png",
@@ -1629,7 +1629,7 @@ const u = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), _
   u + "/img/bg-dark.webp",
   u + "/img/bg.webp",
   u + "/site.webmanifest"
-], Ce = "1700218448917";
+], Ce = "1706378458986";
 Re([
   ..._e.map((r) => ({ url: r, revision: null })),
   ...ve.filter((r) => !r.includes(".nojekyll")).map((r) => ({ url: r, revision: `${Ce}` }))
